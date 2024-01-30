@@ -10,13 +10,9 @@ public class main {
         int l = 76;
         int k = 7;
         for(int i = 0; i < fallafel.length; ++i){
-            for(int j = 0; j < i + 1; ++j, l += 16, k += l){
+            for(int j = 0; j < fallafel[i].length; ++j, l += 16, k += l){
                 fallafel[i][j] = k;
-            }
-        }
-        for(int i = 0; i < fallafel.length; ++i){
-            for(int j = 0; j < i + 1; ++j){
-                System.out.print(fallafel[i][j] + " ");
+                System.out.print(fallafel[i][j]);
             }
             System.out.println();
         }
